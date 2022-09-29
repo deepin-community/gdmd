@@ -1,0 +1,3 @@
+version=3
+
+https://github.com/D-Programming-GDC/gdmd/tags .*/v?(\d\S*)\.tar\.gz

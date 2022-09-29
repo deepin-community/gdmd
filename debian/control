@@ -1,0 +1,26 @@
+Source: gdmd
+Section: devel
+Priority: optional
+Maintainer: Debian D Language Group <team+d-team@tracker.debian.org>
+Uploaders: Matthias Klumpp <mak@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               gdc (>= 4:9.2)
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://github.com/D-Programming-GDC/gdmd
+Vcs-Git: https://salsa.debian.org/d-team/gdmd.git
+Vcs-Browser: https://salsa.debian.org/d-team/gdmd
+
+Package: gdmd
+Architecture: all
+Depends: gdc (>= 4:9.2),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: DMD-like wrapper for GDC
+ This package provides `gdmd`, an interface to the GNU D compiler (GDC), which
+ recognizes flags normally used with the DMD D compiler and translates them to
+ flags GDC can understand.
+ This makes `gdmd` a drop-in replacement to the `dmd` compiler invocation.
+ .
+ The GNU D compiler compiles D sources using the gcc backend to generate
+ highly optimized binaries.

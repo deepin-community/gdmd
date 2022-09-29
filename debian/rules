@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	make install prefix=/usr DESTDIR=$(CURDIR)/debian/gdmd
+
+override_dh_missing:
+	dh_missing --fail-missing

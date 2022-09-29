@@ -1,0 +1,24 @@
+gdmd (2.100+git200102-1) unstable; urgency=medium
+
+  * New upstream version: 2.100+git200102
+    - The version number is completely messed up now,
+      upstream calls this version "0.1.0", going backwards
+      from "2.068.2". So in the long run, upstream needs to
+      fix the versioning, or we need an epoch in the package.
+      Packaged is the release tagged on 2020-01-02.
+  * Bump standards version: No changes needed
+  * Mark rules as not requiring root
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 15 Feb 2020 19:05:04 +0100
+
+gdmd (2.068.2+git190828-2) unstable; urgency=medium
+
+  * No-change rebuild on the Debian autobuilders
+
+ -- Matthias Klumpp <mak@debian.org>  Sun, 08 Sep 2019 22:56:54 +0200
+
+gdmd (2.068.2+git190828-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 31 Aug 2019 16:04:46 +0200
